@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
     public void Menu() {
-        Application.LoadLevel(0);
+       // Application.LoadLevel(0);
     
     }
 }

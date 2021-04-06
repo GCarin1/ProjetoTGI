@@ -1,15 +1,11 @@
-using System.IO.Enumeration;
-using System;
-using System.IO;
-using System.Security.AccessControl;
-using System.Colleciontos;
-using System.Collections.Generic;
+
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-    public class DragAndDrop : MonoBehaviour, IPointerDownGandler,IBeginDragHadler,IEndDragHandler,IEndDragHandler
+    public class DragAndDrop : MonoBehaviour, IPointerDownHandler ,IBeginDragHandler,IEndDragHandler
     {
-    [SerializeField] private ReactTransform _transform;
+    [SerializeField] private RectTransform _transform;
     [SerializeField] private Canvas _canvas;
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private AudioSource _as;
@@ -20,13 +16,13 @@ using UnityEngine.EventSystems;
     {
         _as.clip = _grab;
         _as.Play();
-        _canvasGroup.Alpha= 0.5f;
-       _canvasGroup.bloacksRaycasts = false;
+        _canvasGroup.alpha= 0.5f;
+       _canvasGroup.blocksRaycasts = false;
     }
     public void OnEndDrag(PointerEventData eventData)
     {
-        _canvasGroup.Alpha = 1f;
-        _canvasGroup.bloacksRaycasts = true;
+        _canvasGroup.alpha = 1f;
+        _canvasGroup.blocksRaycasts = true;
     }
     public void OnDrag(PointerEventData eventData)
     {

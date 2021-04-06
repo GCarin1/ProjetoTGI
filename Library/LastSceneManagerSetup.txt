@@ -1,4 +1,5 @@
 sceneSetups:
-- path: assets/Cenas/Kali.unity
+- path: assets/Cenas/room.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0

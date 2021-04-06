@@ -3,12 +3,14 @@ using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
 public class Playerr : MonoBehaviour
-    {
+
+{
 
         public float speed;
         public Animator anim;
-        
-        void Update()
+
+    
+    void Update()
         {
         Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f);
