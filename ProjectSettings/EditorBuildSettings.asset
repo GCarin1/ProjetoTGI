@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Cenas/room.unity
+    guid: 10946d9fc2e07ce418cb6f0d80124849
+  - enabled: 1
+    path: Assets/Cenas/Kali.unity
+    guid: 5214700402966b443a6487a7da48ce67
   m_configObjects: {}
